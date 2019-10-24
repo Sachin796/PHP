@@ -25,17 +25,39 @@ nav {
   list-style: none;
 }
 .nav-links {
+  margin-left: 40%;
   display: flex;
   justify-content: space-around;
   width: 30%;
   letter-spacing: 2px;
 }
 
-body {
-  background-color: brown;
-}
 .container {
-  background-color: chocolate;
+  margin-top: 2%;
+}
+.container div {
+}
+
+.heading {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: teal;
+  justify-content: center;
+  text-underline-position: below;
+}
+
+.container .row1 {
+  width: 15%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-right: 15px;
+  box-shadow: 2px 2px springgreen;
+}
+
+.icon {
+  
+  
+  display: none;
 }
 
 .burger {
@@ -68,14 +90,14 @@ body {
     display: flex;
     flex-direction: column;
     opacity: 0.89;
-    transform: translateX(-100%);
+    transform: translateX(-300%);
   }
   .nav-links li {
     opacity: 1;
     text-align: center;
   }
   .logo {
-    padding-right: 25vh;
+    padding-right: 4vh;
   }
   .container {
     width: 60%;
@@ -85,9 +107,16 @@ body {
     display: block;
     cursor: pointer;
   }
+  .icon
+  {
+    margin: 0%;
+    background-color: aquamarine;
+    display: block;
+    cursor: pointer;
+  }
 }
 .nav-active {
-  transform: translate(0%);
+  transform: translate(-200%);
 }
 
 .toggle .line1 {
