@@ -43,12 +43,10 @@ nav {
   justify-content: center;
 }
 
-.butn
-{
+.butn {
   position: absolute;
   bottom: 0%;
   margin: 60px;
-  
 }
 
 .container .row1,
@@ -68,7 +66,6 @@ nav {
   display: none;
   left: 0px;
 }
-
 .burger div {
   width: 20px;
   height: 3px;
@@ -84,6 +81,12 @@ nav {
   background-color: crimson;
   width: 10%;
   height: 92vh;
+
+  transform: translateX(-81%);
+}
+
+.navlinksidebtnclicked {
+  transform: translateX(0%);
 }
 
 .nav-linkside li {

@@ -3,6 +3,8 @@ this.className = "";
 var burger = document.querySelector(".burger");
 var nav = document.querySelector(".nav-links");
 var btnslide = document.querySelector(".butn");
+var navside = document.querySelector(".nav-linkside");
+var navsideli = document.querySelector(".nav-linkside li");
 var iconNav = document.querySelector(".icon");
 var iconNavLink = document.querySelector(".nav-link");
 
@@ -20,14 +22,14 @@ const navSlide = () => {
 
   // Icon click
   iconNav.addEventListener("click", () => {
-    //  document.getElementsByClassName("nav-link")[0].style.transition="0.5s ease-out";
     iconNavLink.classList.toggle("iconNav-active");
-    console.log(iconNav.classList.value);
   });
 
   // Side btn clicked
   btnslide.addEventListener("click", () => {
-  
+    document.getElementsByClassName("nav-linkside")[0].style.transition =
+      "0.5s ease-out";
+    navside.classList.toggle("navlinksidebtnclicked");
   });
 };
 
