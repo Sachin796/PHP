@@ -4,6 +4,7 @@ var burger = document.querySelector(".burger");
 var nav = document.querySelector(".nav-links");
 var btnslide = document.querySelector(".butn");
 var navside = document.querySelector(".nav-linkside");
+var navside1 = document.querySelector(".nav-linkside1");
 var navsideli = document.querySelector(".nav-linkside li");
 var iconNav = document.querySelector(".icon");
 var iconNavLink = document.querySelector(".nav-link");
@@ -30,6 +31,11 @@ const navSlide = () => {
     document.getElementsByClassName("nav-linkside")[0].style.transition =
       "0.5s ease-out";
     navside.classList.toggle("navlinksidebtnclicked");
+    //
+
+    document.getElementsByClassName("nav-linkside1")[0].style.transition =
+      "0.5s ease-out";
+    navside1.classList.toggle("navlinkside1");
   });
 };
 

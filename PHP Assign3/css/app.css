@@ -46,7 +46,8 @@ nav {
 .butn {
   position: absolute;
   bottom: 0%;
-  margin: 60px;
+  margin-left: 5px;
+  margin-bottom: 30px;
 }
 
 .container .row1,
@@ -78,18 +79,48 @@ nav {
   position: absolute;
   left: 0%;
   top: 8vh;
-  background-color: crimson;
-  width: 10%;
+  background-color: grey;
+  width: 9%;
   height: 92vh;
+  transform: translateX(-75%);
+}
 
-  transform: translateX(-81%);
+.nav-linkside1 {
+  position: absolute;
+  left: 0%;
+  top: 8vh;
+  background-color: grey(165, 36, 36);
+  height: 92vh;
+  transform: translateX(40%);
+  list-style: none;
+  text-decoration: none;
+  animation: showicons 0.5s forwards ease-out;
+}
+@keyframes showicons {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+.navlinkside1 {
+  display: none;
 }
 
 .navlinksidebtnclicked {
   transform: translateX(0%);
 }
 
-.nav-linkside li {
+.nav-linkside li,
+.nav-linkside1 li {
   padding-top: 20px;
   text-align: center;
   padding-bottom: 30px;
@@ -135,11 +166,11 @@ nav {
     position: absolute;
     right: 0px;
     width: 15%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     opacity: 0.8;
-    transform: translate(0%, -127%);
+    transform: translate(0%, -162%);
   }
 
   .nav-link li {
@@ -150,6 +181,14 @@ nav {
   }
   .nav-link a {
     text-decoration: none;
+  }
+
+  .nav-linkside1 {
+    display: none;
+  }
+
+  .butn {
+    display: none;
   }
 
   /* ***************************************** */
